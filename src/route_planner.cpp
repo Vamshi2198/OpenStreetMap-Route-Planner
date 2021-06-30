@@ -46,7 +46,9 @@ void RoutePlanner::AddNeighbors(RouteModel::Node *current_node) {
 }
 
 
-// Sort the open_list according to the sum of the h value and g value.
+
+// - Sort the open_list according to the sum of the h value and g value.
+
 bool Compare(RouteModel::Node *a,RouteModel::Node *b){
   float f1 = a->g_value + a->h_value;  
   float f2 = b->g_value + b->h_value;  
@@ -58,7 +60,16 @@ bool Compare(RouteModel::Node *a,RouteModel::Node *b){
    }
 }
 
-RouteModel::Node *RoutePlanner::NextNode() {
+// The NextNode method sorts the open list and returns the next node.
+ 
+  RouteModel::Node *RoutePlanner::NextNode() {
+  sort(open_list.begin(), open_list.end(),Compare);
+// - Create a pointer to the node in the list with the lowest sum.
+  RouteModel::Node *lowest_sum = open_list.back();
+// - Remove that node from the open_list.
+  open_list.pop_back();
+// - Return the pointer.
+  return lowest_sum;
 
 }
 
