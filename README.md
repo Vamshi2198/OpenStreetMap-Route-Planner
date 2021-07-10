@@ -1,5 +1,6 @@
 # OpenStreetMap-Route-Planner
-
+This project is a part of Udacity’s C++ NanoDegree program. The aim of project is to find the shortest path between two points on the map.
+<img src="map.png" width="600" height="450" />
 ## Dependencies
 * cmake >= 3.11.3
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
