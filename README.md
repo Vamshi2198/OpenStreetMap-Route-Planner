@@ -1,5 +1,6 @@
 # OpenStreetMap-Route-Planner
 This project is a part of Udacity’s C++ NanoDegree program. The aim of project is to find the shortest path between two points on the map.
+
 <img src="map.png" width="600" height="450" />
 ## Dependencies
 * cmake >= 3.11.3
@@ -15,3 +16,10 @@ This project is a part of Udacity’s C++ NanoDegree program. The aim of project
 * IO2D
   * Installation instructions for all operating systems can be found [here](https://github.com/cpp-io2d/P0267_RefImpl/blob/master/BUILDING.md)
   * This library must be built in a place where CMake `find_package` will be able to find it
+
+## Cloning
+
+When cloning this project, make sure to use the `--recurse-submodules` flag. 
+```
+git clone https://github.com/Vamshi2198/OpenStreetMap-Route-Planner --recurse-submodules
+```
