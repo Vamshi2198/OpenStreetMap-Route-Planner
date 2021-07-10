@@ -2,6 +2,7 @@
 This project is a part of Udacity’s C++ NanoDegree program. The aim of project is to find the shortest path between two points on the map.
 
 <img src="map.png" width="600" height="450" />
+
 ## Dependencies
 * cmake >= 3.11.3
   * All OSes: [click here for installation instructions](https://cmake.org/install/)
@@ -22,4 +23,31 @@ This project is a part of Udacity’s C++ NanoDegree program. The aim of project
 When cloning this project, make sure to use the `--recurse-submodules` flag. 
 ```
 git clone https://github.com/Vamshi2198/OpenStreetMap-Route-Planner --recurse-submodules
+```
+
+### Compiling
+To compile the project, first, create a `build` directory and change to that directory:
+```
+mkdir build && cd build
+```
+From within the `build` directory, then run `cmake` and `make` as follows:
+```
+cmake ..
+make
+```
+### Running
+The executable will be placed in the `build` directory. From within `build`, you can run the project as follows:
+```
+./OSM_A_star_search
+```
+Or to specify a map file:
+```
+./OSM_A_star_search -f ../<your_osm_file.osm>
+```
+
+## Testing
+
+The testing executable is also placed in the `build` directory. From within `build`, you can run the unit tests as follows:
+```
+./test
 ```
