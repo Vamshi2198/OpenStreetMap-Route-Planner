@@ -1,7 +1,7 @@
 # OpenStreetMap-Route-Planner
 This project is a part of Udacity’s C++ NanoDegree program. The aim of project is to find the shortest path between two points on the map.
 
-The starter code of the project is taken from the OpenStreetMap demonstration of the IO2D graphics rendering library. C++ doesn't have the graphics rendering functionality as a part of the standard library. IO2D has been proposed as an addition to standard library.
+The starter code of the project is taken from the OpenStreetMap demonstration of the IO2D graphics rendering library. C++ doesn't have the graphics rendering functionality as a part of the standard library. IO2D has been proposed as an addition to standard library. This project extends the IO2D OpenStreetMap demo code to render a path between two points.
 
 <img src="map.png" width="600" height="450" />
 
